@@ -1,40 +1,34 @@
-# server-performance-status
-Server performance monitoring script built with Bash. It provides a quick snapshot of CPU usage, memory usage, disk usage, and the top 5 processes consuming CPU and memory.
+# Server Performance Status
 
+A Bash script that provides a quick snapshot of basic server performance metrics.
 
-# How to run
-git clone: https://github.com/joaopedrofariaferreira/server-performance-status.git
+This project was built as part of the [roadmap.sh Server Stats Project](https://roadmap.sh/projects/server-stats).
 
-# Give execution permission
-chmod +x server-stats.sh
+## Features
 
-#Run
-./server-stats.sh
+- Total CPU usage
+- Total memory usage
+- Disk usage
+- Top 5 processes by CPU usage
+- Top 5 processes by memory usage
 
-#Exemple
-===== CPU USAGE =====
-CPU usage: 5.63% user, 9.20% sys, 85.15% idle
+## Requirements
 
-===== MEMORY USAGE =====
-PhysMem: 23G used, 75M unused.
+This script was created and tested on **macOS**.
 
-===== DISK USAGE =====
-Used: 17Gi | Free: 127Gi | Used %: 12%
+It uses standard command-line tools:
 
-===== TOP 5 CPU PROCESSES =====
-USER            PID      %CPU     %MEM
-joaopedro       718      15.9     0.3
-joaopedro       662      6.7      0.1
+- `top`
+- `ps`
+- `df`
+- `awk`
+- `grep`
+- `sort`
+- `head`
 
-===== TOP 5 MEMORY PROCESSES =====
-USER            PID      %CPU     %MEM
-joaopedro       2101     0.0      2.7
-joaopedro       707      0.8      2.4
+## How to Run
 
-What I Practiced
+Clone the repository:
 
-* Bash scripting
-* Linux/macOS command-line tools
-* Process monitoring
-* CPU, memory, and disk inspection
-* Pipes and text processing with awk, grep, sort, and head
+```bash
+git clone https://github.com/joaopedrofariaferreira/server-performance-status.git
